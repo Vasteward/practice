@@ -1,0 +1,8 @@
+h1 {display: block;}
+section {
+  display: block;
+}
+
+body {
+  border: dashed;
+}

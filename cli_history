@@ -1,0 +1,12 @@
+  134  notes
+  135  ls
+  136  cp cli.md cli-2.md
+  137  ls
+  138  rm cli.md
+  139  ls
+  140  mv cli-2.md cli.md
+  141  ls
+  142  ..
+  143  rm notes
+  144  rm -rf notes
+  145  ls

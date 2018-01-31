@@ -1,0 +1,16 @@
+body {
+  background: Light purple;
+}
+div {
+  padding: 20px;
+  border: 10px outset yellowgreen;
+}
+
+h1 {
+  font-family: "Courier New", Serif;
+  font: fantasy;
+  color:;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+}

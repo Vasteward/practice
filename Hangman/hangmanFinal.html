@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman</title>
+</head>
+<body>
+  <h1>Hangman!</h1>
+  <script>
+//Return a random word
+    var pickWord = function () {
+      var words = [
+        "love",
+        "tranquility",
+        "personality",
+        "hope",
+        "caudillo"
+      ];
+      return words [Math.floor(Math.random() * words.length)];
+    };
+/* Setup Answer Array- will fill all of
+the unknowns with underscores at the leng of
+.length(per is primary function), and return
+will SHOW how many missing letters there are
+in the word with the underscore we just coded */
+    var setupAnswerArray = function (word) {
+      for (var i = 0; i < word.length; i++) {
+        answerArray[i] = "_";
+      }
+      return answerArray
+    };
+
+//KEEPS TRACK of how many letters are LEFT to be guessed
+var showPlayerProgress =  word.length;
+//GAME LOOP!!!! runs until there are ZERO letters left to guess
+while (showPlayerProgress > 0) {
+
+//coded the variable showPlayerProgress as a function called answerArray
+    var showPlayerProgress = function (answerArray) {
+//SHOWS player progress
+      alert(answerArray.join(" "));
+    };
+/*Tell the player that we need them to submit
+a qualified answer (.prompt). If they dont want to play,
+they'll click cancel-
+it will return null, and since we've set it to
+"break", it will end the loop
+The else if statment alerts the player
+that they need to submit only one letter*/
+    var getGuess = function () {
+      return prompt ("Guess a single letter or click Cancel to stop playing.")
+    };
+      if (getGuess === null){
+        break;
+      } else if (getGuess.length !== 1) {
+        alert("Please enter a single letter.");
+      } else {
+      }
+//Update Game state-once the player enters a valid guess
+      var updateGameState = function (guess, word, answerArray) {
+        var appearances = 0;
+
+        for (var j = 0; j < word.length; j++) {
+          if (word[j] === guess) {
+            answerArray[j] === guess;
+            appearances++;
+          }
+        }
+        return appearances;
+      };
+//congratulate the player
+    var showAnswerAndCongratulatePlayer = function (answerArray) {
+      showPlayerProgress(answerArray);
+      alert("Good job! The answer was " + word);
+    };
+
+      }
+    }
+      </script>
+</body>
+</html>

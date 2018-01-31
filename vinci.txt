@@ -1,0 +1,49 @@
+Create a file named cli.md
+Open cli.md file with a command line text editor
+Add the text "## Galvanize" to the top of the file
+Save and quit
+Print the contents of the cli.md file to the terminal
+
+Make a folder named notes: mkdir filename
+Navigate to the notes folder: ~/Documents/notes
+Move the cli.md file into the notes folder:mv cli.txt notes
+Copy the cli.md file to a file called cli-2.md: cp cli.md cli-2.md
+List the contents of the notes folder: ls
+Delete the cli.md file: rm cli.md
+Rename the cli-2.md file to cli.md:mv cli-2.md cli.md
+:Navigate up a directory: ..
+Remove the notes directory: rm -rf notes
+Type the following command history | tail -n 12 > cli_history
+..
+Commit and push your changes
+
+
+Make a directory called site: mkdir site
+Navigate into the directory: site
+Make a file called index.html: touch index.html
+Make a directory called pages: mkdir pages
+Make a file in the pages directory called about.html with a text editor without navigating into the folder: atom pages/about.html
+Add <html></html> to the first line: <html> </html>
+Save and quit
+Move about.html into the current directory:mv pages/about.html .
+List the files in the pages directory: ls pages
+Remove the pages directory: rm -rf pages
+Navigate back to the original folder: cd ..
+Remove the site folder: 
+Type the following command history | tail -n 12 > cli_history
+Commit and push your changes
+
+Make a file called install.sh: touch install.sh
+Make a directory called app: mkdir app
+Navigate into the app folder: cd app
+Make a directory called bin: mkdir bin
+Move the install.sh file to the bin directory: mv ../install.sh bin/ (it needs to be .. because you are moving it up to it's parent folder; also add the backslash so it knows to it's a pathway and that you don't want to rename it)
+Copy the copied install.sh file to the bin directory and name it install.sh.backup: cp bin/install.sh bin/install.sh.backup
+Remove all of the files in the bin directory in one command, leaving the directory intact: rm bin/*
+Remove the bin directory: rm -rf bin
+List the contents of the current directory (app): ls
+Move up to your original directory: cd ..
+Remove the app directory: rm -rf app
+Type the following command history | tail -n 12
+
+
